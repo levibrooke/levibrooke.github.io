@@ -2,17 +2,135 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <section id="intro" class="intro" name="intro">
+        <div class="intro-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h1>Hi, I'm Levi.</h1>
+                    </div>
+                </div>       
+            </div>
+            <div class="col-xs-12">
+                <h2>I create unique experiences for the web.</h2>
+                <!-- Meet Me Button -->
+                <div class="button-spacing">
+                    <a href="#about" class="email-button smoothScroll">ABOUT ME</a>
+                </div>
+            </div> 
+        </div>
+    </section>
+        
+    <section id="about" class="about" name="about">
+        <div class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                        <h3>About Me</h3>
+                        <div class="divider-white"></div>
+                        <p>I am a web designer and developer currently living in Jacksonville, Fla. I recently completed eight years of service in the Coast Guard, where I got to travel all over the country. I studied public relations in <a class="about-link" href="http://www.unf.edu" target="_blank">college</a> and I have been a marketing and technology enthusiast ever since. When I’m not working on projects, you can find me on a soccer field or <a class="about-link" href="http://twitter.com/levibrooke" target="_blank">tweeting</a> about the beautiful game.</p>
+                        <div class="col-sm-12">
+                            <a href="mailto:levi@levibrooke.com" target="_blank"><i class="fa fa-inbox fa-2x social-icons"></i></a>
+                            <a href="http://twitter.com/levibrooke" target="_blank"><i class="fa fa-twitter fa-2x social-icons"></i></a>
+                            <a href="http://linkedin.com/in/levibporter" target="_blank"><i class="fa fa-linkedin-square fa-2x social-icons"></i></a>
+                            <a href="http://instagram.com/levibrooke" target="_blank"><i class="fa fa-instagram fa-2x social-icons"></i></a>
+                            <a href="http://open.spotify.com/user/levibrooke" target="_blank"><i class="fa fa-spotify fa-2x social-icons"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="services" class="services" name="services">
+        <div class="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                        <h3>Services</h3>
+                        <div class="divider-black"></div>
+                        <p class="services-desc">Whether it’s with attractive web design, digital marketing or even traditional public relations, I want to help you tell your story. I’m no one-trick pony.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+                        <i class="fa fa-tablet fa-5x"></i>
+                        <h4>Web Design</h4>
+                        <p class="services-desc">I believe an effective web presence is all about pairing attractive web design with analytical thinking. I create sharp looking websites from concept to code and have experience with content management systems.</p>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+                        <i class="fa fa-bullseye fa-5x"></i>
+                        <h4>Branding</h4>
+                        <p class="services-desc">Not only can I help you stand out with a strong visual representation of your business, but I can also assist you with crafting your message to customers.</p>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+                        <i class="fa fa-rocket fa-5x"></i>
+                        <h4>Strategy</h4>
+                        <p class="services-desc">Have a new product or business? I can help you develop and implement a plan for a successful launch. I have experience with PR campaigns and online marketing solutions such as Facebook Ads.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <h4 class="services-cta">If you have a project that you would like to discuss, please shoot me a message.</h4>
+                        <h4 class="new-projects">I am currently accepting new projects.</h4>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <div class="button-spacing">
+                        <a href="mailto:levi@levibrooke.com?subject=Hey let's work together!" class="email-button">EMAIL ME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="photos" class="photos">
+        <div class="photos-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Latest Photos</h3>
+                        <div class="divider-white"></div>
+                    </div>
+                    <div class="photos-wrap">
+                        <!-- Instafeed target div -->
+                        <div id="instafeed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="contact" class="contact" name="contact">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-6">
+                            <h3>Contact</h3>
+                            <div class="divider-black"></div>
+                            <p class="contact">Interested in working together? Shoot me an email.</p>
+                            <h4 class="new-projects">I am currently accepting new projects.</h4>
+                            <div class="button-spacing">
+                                <!-- Let's Talk Button -->
+                                <a href="mailto:levi@levibrooke.com?subject=Hey let's work together!" target="_blank" class="email-button">Let's Talk</a>
+                            </div>
+                            <div class="col-sm-12">
+                                <a href="mailto:levi@levibrooke.com" target="_blank"><i class="fa fa-inbox fa-2x social-icons"></i></a>
+                                <a href="http://twitter.com/levibrooke" target="_blank"><i class="fa fa-twitter fa-2x social-icons"></i></a>
+                                <a href="http://linkedin.com/in/levibporter" target="_blank"><i class="fa fa-linkedin-square fa-2x social-icons"></i></a>
+                                <a href="http://instagram.com/levibrooke" target="_blank"><i class="fa fa-instagram fa-2x social-icons"></i></a>
+                                <a href="http://open.spotify.com/user/levibrooke" target="_blank"><i class="fa fa-spotify fa-2x social-icons"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-1 music">
+                            <p>What I’ve been listening to lately:</p>
+                            <div class="contact-right">
+                            <iframe src="https://embed.spotify.com/?uri=spotify:user:levibrooke:playlist:7ImCIR6tutJtTLTzuqJnhd" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>

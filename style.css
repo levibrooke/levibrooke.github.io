@@ -303,7 +303,7 @@ p {
     width: 100%;
     height: auto;
     padding: 250px 0px;
-    background: url(/bg-large.jpg) no-repeat center scroll;
+    background: url(/images/bg-large.jpg) no-repeat center scroll;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

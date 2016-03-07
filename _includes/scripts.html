@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            userId: 31176171,
+            accessToken: '31176171.467ede5.37d25e0a43ca4bc381f25fc96868710a',
+            limit: 4,
+            sortBy: 'most-recent',
+            links: true,
+            resolution: 'low_resolution',
+            template: '<div class="col-xs-6 col-sm-3 col-md-3"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>'
+        });
+        feed.run();
+</script>
+{% if site.google_analytics %}
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', '{{ site.google_analytics }}', 'auto');
+		ga('send', 'pageview', {
+		  'page': '{{ page.url }}',
+		  'title': '{{ page.title | replace: "'", "\\'" }}'
+		});
+	</script>
+	<!-- End Google Analytics -->
+{% endif %}
