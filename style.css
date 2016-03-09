@@ -440,6 +440,7 @@ body {
 }
 
 
+/*
 #top:before, #top:after, #bottom:before, #bottom:after {
     content: '';
     display: block;
@@ -474,6 +475,7 @@ body {
     right: 0;
     bottom: 0;
 }
+*/
 
 #wrapper {
     background-image: url(/images/hero.jpg);
