@@ -494,7 +494,7 @@ body {
     align-items: center;
 }
 
-.wrapper .nav-link{
+#wrapper .nav-link{
     color: #ffffff;
     font-size: 1em;
     font-weight: ;
@@ -502,12 +502,13 @@ body {
     top: 50vh;
     z-index: 200;
     cursor: pointer;
+    display: inline-block;
 }
 
-.nav-link .left {
+.nav-link.left {
     left: 3.125em;
 }
 
-.nav-link .right {
+.nav-link.right {
     right: 3.125em;
 }
