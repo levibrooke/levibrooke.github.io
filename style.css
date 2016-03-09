@@ -299,7 +299,13 @@ p {
     text-align: center;
 }
 
-.intro-img {
+.hero-wrapper {
+    overflow: hidden;
+    perspective: 4000px;
+}
+
+.hero-floating {
+    transform-style: preserve-3d;
     width: 100%;
     height: auto;
     padding: 250px 0px;
@@ -310,7 +316,22 @@ p {
     -webkit-background-size: cover;
     background-color: #323232;
 }
-    
+
+.hero-floating img:first-child {
+    transform: translateZ(50px);
+}
+
+.hero-floating img:nth-child(2) {
+    transform: translate3d(50px,50px,50px);
+}
+
+.hero-floating img:nth-child(3) {
+    transform: translate3d(50px,50px,50px);
+}
+
+.hero-floating img:nth-child(4) {
+    transform: translate3d(50px,50px,50px);
+}
 
 /* About Section */
 .about-section {
