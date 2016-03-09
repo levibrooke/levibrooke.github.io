@@ -439,7 +439,7 @@ body {
     background-color: #ffffff;
 }
 
-.wrapper {
+#wrapper {
     background-image: "{{ site.url }}/images/hero.jpg";
     background-size: cover;
     background-position: 50% 50%;
