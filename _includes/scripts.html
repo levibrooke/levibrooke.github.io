@@ -1,29 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-<script type="text/javascript" src="js/instafeed.min.js"></script>
-<script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'user',
-            userId: 31176171,
-            accessToken: '31176171.467ede5.37d25e0a43ca4bc381f25fc96868710a',
-            limit: 4,
-            sortBy: 'most-recent',
-            links: true,
-            resolution: 'low_resolution',
-            template: '<div class="col-xs-6 col-sm-3 col-md-3"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>'
-        });
-        feed.run();
-</script>
-<script type="text/javascript">
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        }
-    });
-</script>
 
 {% if site.google_analytics %}
 	<!-- Google Analytics -->
