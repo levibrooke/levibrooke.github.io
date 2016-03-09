@@ -439,6 +439,42 @@ body {
     background-color: #ffffff;
 }
 
+
+#top:before, #top:after, #bottom:before, #bottom:after {
+    content: '';
+    display: block;
+    position: fixed;
+    background: #ffffff;    
+}
+
+#top:before{
+    height: 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#top:after {
+    width: 15px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#bottom:before {
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#bottom:after {
+    width: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
 #wrapper {
     background-image: url(/images/hero.jpg);
     background-size: cover;
@@ -496,6 +532,7 @@ body {
 
 #wrapper .nav-link{
     color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
     font-weight: ;
     position: fixed;
@@ -503,6 +540,9 @@ body {
     z-index: 200;
     cursor: pointer;
     display: inline-block;
+    border-bottom: dotted 1px #fff;
+    text-decoration: none;
+    padding-bottom: 2px;
 }
 
 .nav-link.left {
@@ -511,4 +551,15 @@ body {
 
 .nav-link.right {
     right: 3.125em;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
 }
