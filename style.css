@@ -531,7 +531,7 @@ body {
     align-items: center;
 }
 
-#wrapper .nav-link:link {
+#wrapper .nav-link {
     color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
@@ -546,7 +546,7 @@ body {
     padding-bottom: 2px;
 }
 
-.nav-link:visited, .nav-link:hover, .nav-link:active {
+#wrapper .nav-link:visited, #wrapper .nav-link:hover, #wrapper .nav-link:active {
     border-bottom: solid 1px #fff;
     text-decoration: none;
     padding-bottom: 2px;
