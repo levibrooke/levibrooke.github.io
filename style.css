@@ -658,6 +658,10 @@ body {
     text-align: center;
 }
 
+.text-align-left {
+    text-align: left;
+}
+
 h1 {
     font-size: 5em;
     color: #fff;
@@ -682,4 +686,25 @@ span.rotate {
 
 span.hidden {
     display: none;
+}
+
+#about-left {
+    width: 50vw;
+    height: 100vh;
+    background: #ffffff;
+}
+
+#about-right {
+    width: 50vw;
+    height: 50vh;
+    background-image: url(images/hero.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.about-content {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
 }
