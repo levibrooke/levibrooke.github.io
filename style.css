@@ -444,7 +444,8 @@ body {
     content: '';
     display: block;
     position: fixed;
-    background: #ffffff;    
+    background: #ffffff;
+    z-index: 99999;
 }
 
 #top:before{
