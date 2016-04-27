@@ -4,7 +4,7 @@ url: http://levibrooke.com
 
 markdown: kramdown
 highlighter: rouge
-permalink: articles/:title
+permalink: /articles/:title
 
 # plugins
 gems:
