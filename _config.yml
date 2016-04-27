@@ -11,7 +11,6 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom (RSS-like) feed of posts
   - jemoji
-  - jekyll-mentions
   - jekyll-redirect-from
 
 # exclude
