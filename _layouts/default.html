@@ -4,10 +4,12 @@
     {% include header.html %}
     
     <body>
-
-        {{ content }}
-
-        {% include footer.html %}
-
+        {% include gtm-container.html %}
+        
+        <div class="container">
+            {% include page-nav.html %}
+            {{ content }}  
+            {% include footer.html %}
+        </div>
     </body>
 </html>
