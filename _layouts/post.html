@@ -8,7 +8,6 @@
         
         <div class="container">
             {% include post-nav.html %}
-            {% include reading-time.html %}
             <article class="article-post">
                 <header class="post-header" style="background-image: url('{{ site.url }}/images/{{ page.image }}')">
                     <div class="row">
@@ -32,6 +31,7 @@
                 </aside>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        {% include reading-time.html %}
                         {{ content }}
                         {% include post-footer.html %}
                         {% include comments.html %}
