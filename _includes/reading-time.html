@@ -12,5 +12,5 @@
 {% elsif words < 990 %}
 {% assign reading_time = "5 min" %}
 {% else %}
-{% assign reading_time = words | divided_by:180 | ceil | append:" min" %}
+{% assign reading_time = words | divided_by:180 | append:" min" %}
 {% endif %}
