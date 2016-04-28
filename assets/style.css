@@ -1,0 +1,30 @@
+/*** levibrooke.com styles ***/
+/*** Colors ***
+Dark gray #242927
+Dark green #2F3633
+Gold #CBB784
+**************/
+
+/*** Typography ***/
+body, p, a, ul, li {
+    font-family: 'proxima nova';
+}
+
+h1, h2, h3 {
+    font-family: 'clarendon';
+}
+
+/*** Structure ***/
+
+.container {}
+
+#page-nav {}
+
+#post-nav {}
+
+
+/*** Post Header **/
+.post-header {
+    background-image: ;
+}
+.post-header-inner {}
