@@ -1,0 +1,22 @@
+name: Levi Porter
+description: I create unique experiences for the web.
+url: http://levibrooke.com
+
+markdown: kramdown
+highlighter: rouge
+permalink: /articles/:title
+
+# plugins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom (RSS-like) feed of posts
+  - jemoji
+  - jekyll-redirect-from
+
+# exclude
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
