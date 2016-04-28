@@ -7,12 +7,12 @@ Gold #CBB784
 
 /*** Typography ***/
 
-body, p, a, ul, li, h4 {
+body, p, a, ul, li, h3, h4 {
     font-family: "proxima nova";
     color: #242927;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: "clarendon-urw";
     color: #2F3633;
 }
@@ -40,6 +40,11 @@ h4 {
 
 #post-nav {}
 
+/*** Elements ***/
+.satellite {
+    margin: 40px 0;
+}
+
 /*** Navigation **/
 
 .navbar {
@@ -54,8 +59,14 @@ h4 {
 
 }
 #nav a {
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #2F3633;
+}
+.navbar-default .navbar-brand {
+    color: #2F3633;
 }
 
 /** Bootstrap navbar overrides **/
@@ -67,6 +78,11 @@ h4 {
         float: right!important;
         margin-right: 0;
     }
+}
+
+/*** Index.html ***/
+.prefooter {
+    margin: 80px 0;
 }
 
 /*** Post Header ***/
