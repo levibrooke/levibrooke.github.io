@@ -1,16 +1,15 @@
-{% assign words = post.content | number_of_words %}
-{% if words <= 90 %}
+{% if post.content | number_of_words <= 90 %}
 {% assign reading_time = "30 sec" %}
-{% elsif words < 270 %}
+{% elsif post.content | number_of_words < 270 %}
 {% assign reading_time = "1 min" %}
-{% elsif words < 450 %}
+{% elsif post.content | number_of_words < 450 %}
 {% assign reading_time = "2 min" %}
-{% elsif words < 630 %}
+{% elsif post.content | number_of_words < 630 %}
 {% assign reading_time = "3 min" %}
-{% elsif words < 810 %}
+{% elsif post.content | number_of_words < 810 %}
 {% assign reading_time = "4 min" %}
-{% elsif words < 990 %}
+{% elsif post.content | number_of_words < 990 %}
 {% assign reading_time = "5 min" %}
 {% else %}
-{% assign reading_time = words | divided_by: 180 | append: ' min' %}
+{% assign reading_time = post.content | number_of_words | divided_by: 180 | append: ' min' %}
 {% endif %}
