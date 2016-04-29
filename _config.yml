@@ -1,6 +1,6 @@
 name: Levi Porter
 description: I create unique experiences for the web.
-url: http://levibrooke.com
+url: http://localhost:4000
 
 markdown: kramdown
 highlighter: rouge
