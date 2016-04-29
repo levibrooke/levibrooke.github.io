@@ -63,13 +63,16 @@ a:focus, a:hover {
 .navbar {
     border: none;
 }
+.navbar-brand {
+    padding: 0 15px;
+}
 
 .navbar-default {
     background-color: transparent;
     border-bottom: 2px solid #CBB784;
 }
 .navbar-static-top {
-
+    margin-top: 50px;
 }
 #nav a {
     font-weight: 500;
@@ -96,6 +99,10 @@ a:focus, a:hover {
     .navbar-right {
         float: right!important;
         margin-right: 0;
+    }
+    .navbar-nav>li>a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 /*** Footer ***/
@@ -124,9 +131,9 @@ footer {
     position: absolute;
     height: 1px;
     background-color: #CBB784;
-    width: 520px;
-    top: 34%;
-    left: 398px;
+    width: 360px;
+    top: 37%;
+    left: 498px;
     z-index: 1000;
 }
 .callout {
