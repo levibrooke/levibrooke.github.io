@@ -11,6 +11,9 @@ body, p, a, ul, li, h3, h4 {
     font-family: "proxima nova";
     color: #242927;
 }
+h1, h2, h3, h4 {
+    line-height: 1.5em;
+}
 
 h1, h2 {
     font-family: "clarendon-urw";
@@ -29,12 +32,17 @@ h3 {
     font-weight: 400;
 }
 h4 {
-    font-weight: 500;
+    font-weight: 300;
 }
 a {
     text-decoration: none;
     padding-bottom: 2px;
     border-bottom: 1px dotted #242927;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #242927;
 }
 
 /*** Structure ***/
@@ -66,6 +74,12 @@ a {
 #nav a {
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+.navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    border: none;
 }
 .navbar-default .navbar-nav>li>a {
     color: #2F3633;
@@ -84,8 +98,37 @@ a {
         margin-right: 0;
     }
 }
+/*** Footer ***/
+footer {
+    border-top: 2px solid #2F3633;
+}
+.footer-links {
+    text-align: center;
+    margin: 2em;
+}
+.footer-links a {
+    padding: 1em;
+    text-decoration: none;
+    border: none;
+}
+.footer-links a:focus, .footer-links a:hover {
+    text-decoration: none;
+    border: none;
+}
 
 /*** Index.html ***/
+#profile {
+    padding-top: 4em;
+}
+#profile-line {
+    position: absolute;
+    height: 1px;
+    background-color: #CBB784;
+    width: 520px;
+    top: 34%;
+    left: 398px;
+    z-index: 1000;
+}
 .callout {
     margin-top: 40px;
 }
