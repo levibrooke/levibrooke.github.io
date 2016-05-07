@@ -11,6 +11,11 @@ body, p, a, ul, li, h3, h4 {
     font-family: "proxima nova";
     color: #242927;
 }
+p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 1em;
+}
 h1, h2, h3, h4 {
     line-height: 1.5em;
 }
@@ -19,7 +24,7 @@ h1, h2 {
     font-family: "clarendon-urw";
     color: #2F3633;
 }
-body, p, a, ul, li {
+body, a, ul, li {
     font-weight: 400;
 }
 h1 {
@@ -43,6 +48,7 @@ a:focus, a:hover {
     text-decoration: none;
     padding-bottom: 2px;
     border-bottom: 1px solid #242927;
+    color: #242927;
 }
 
 /*** Structure ***/
@@ -57,11 +63,19 @@ a:focus, a:hover {
 .satellite {
     margin: 40px 0;
 }
+.text-align-center {
+    text-align: center;
+}
+.alignleft {
+    float: left;
+    margin: 1em 2em 2em -9em;
+}
 
 /*** Navigation **/
 
 .navbar {
     border: none;
+    min-height: 20px;
 }
 .navbar-brand {
     padding: 0 15px;
@@ -127,12 +141,18 @@ footer {
 #profile {
     padding-top: 4em;
 }
+#profile h1 {
+    margin: 20px 0 0; 
+}
+#profile h3 {
+    margin: 0 0 20px;
+}
 #profile-line {
     position: absolute;
     height: 1px;
     background-color: #CBB784;
     width: 360px;
-    top: 37%;
+    top: 35%;
     left: 498px;
     z-index: 1000;
 }
