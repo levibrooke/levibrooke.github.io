@@ -50,14 +50,9 @@ h4 {
 }
 a {
     text-decoration: none;
-//    padding-bottom: 2px;
-//    border-bottom: 1px dotted #242927;
 }
 a:focus, a:hover {
     text-decoration: none;
-//    padding-bottom: 2px;
-//    border-bottom: 1px solid #242927;
-//    color: #242927;
 }
 
 /*** Elements ***/
@@ -138,34 +133,61 @@ footer {
 /*** Index.html ***/
 .content-area {
     width: 50%;
-    left: 0;
-    top: 0;
-    height: 100%;
+    min-height: 100vh;
+    z-index: 10;
+    position: relative;
+    background: #fff;
+    transform: translateX(0);
+    transition: all 1s ease;
 }
 .content-block {
+    height: 100vh;
+    overflow: auto;
+}
+.content {
     margin: 100px 50px 0;
     .content-header {margin: 0;}
     .content-intro {margin: 50px 0;}
     .content-intro p {font-size: 20px;}
-    .content-intro p span {font-weight: 300; font-size: 16px; color: #cbb784;}
+    .content-intro p span {font-weight: 300; font-size: 14px; color: #cbb784;}
     .contact-area {position: relative; margin-top: 50px; width: 200px;}
 }
 .contact-area {
     .link {display: block; position: relative; transition: padding .3s ease; font-size: 18px; font-weight: 200;}
     .link:hover {padding-left: 20px; color: #242927;}
+    .link span {color: #cbb784; padding-right: 10px;}
 //    .link:nth-child(1):hover ~ .contact-dash:nth-child(2) {left: -490px;}
 //    .link:nth-child(3):hover ~ .contact-dash:nth-child(4) {left: -490px;}
 //    .contact-dash {position: absolute; border-bottom: 1px solid #cbb784; left: -510px; width: 500px; transition: left .3s ease;}
 //    .contact-dash:nth-child(2) {top: 10px; }
 //    .contact-dash:nth-child(4) {top: 30px; }
-    .link span {color: #cbb784; padding-right: 10px;}
 }
 .image-frame {
     position: absolute;
-    left: 50%;
     top: 0;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     background-color: #2f3633;
-    .image {object-fit: cover; height: 100%; width: 100%; opacity: 0.2;}
+    transform: translateX(25%);
+    transition: transform 1s .5s ease;
+    .image {object-fit: cover; height: 100%; width: 100%; opacity: 0.2; z-index: 5;}
+}
+
+@media screen and (max-width: 1080px) {
+    .image-frame {
+        height: 50vh;
+        transform: none;
+    }
+    .content-area {
+        width: 100%;
+        min-height: 100%;
+        margin-top: 50vh;
+    }
+    .content-block {
+        height: 100%;
+    }
+    .content {
+        margin: 20px;
+        .contact-area {margin: 50px 0;}
+    }
 }
