@@ -186,11 +186,12 @@ footer {
     .image {object-fit: cover; height: 100%; width: 100%; opacity: 0.2; z-index: 5;}
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
     .image-frame {
         height: 50vh;
         transform: none;
         left: 0;
+        width: 100%;
     }
     .content-area {
         width: 100%;
