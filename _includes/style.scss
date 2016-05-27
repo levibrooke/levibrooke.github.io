@@ -138,6 +138,7 @@ footer {
     position: relative;
     background: #fff;
     transform: translateX(0);
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content-block {
@@ -153,7 +154,7 @@ footer {
     .contact-area {position: relative; margin-top: 50px; width: 200px;}
 }
 .contact-area {
-    .link {display: block; position: relative; transition: padding .3s ease; font-size: 18px; font-weight: 200;}
+    .link {display: block; position: relative; -webkit-transition: padding .3s ease; transition: padding .3s ease; font-size: 18px; font-weight: 200;}
     .link:hover {padding-left: 20px; color: #242927;}
     .link span {color: #cbb784; padding-right: 10px;}
 //    .link:nth-child(1):hover ~ .contact-dash:nth-child(2) {left: -490px;}
@@ -165,11 +166,15 @@ footer {
 .image-frame {
     position: absolute;
     top: 0;
+    left: 25%;
     height: 100vh;
     width: 100%;
     background-color: #2f3633;
-    transform: translateX(25%);
-    transition: transform 1s .5s ease;
+//    transform: translateX(25%);
+//    -webkit-transition: -webkit-transform 1s .5s ease;
+//    transition: -webkit-transform 1s .5s ease;
+//    transition: transform 1s .5s ease;
+//    transition: transform 1s .5s ease, -webkit-transform 1s .5s ease;
     .image {object-fit: cover; height: 100%; width: 100%; opacity: 0.2; z-index: 5;}
 }
 
