@@ -3,13 +3,10 @@
     
     {% include header.html %}
     
-    <body>
+    <body class="default">
         {% include gtm-container.html %}
-        
-        <div class="container">
-            {% include page-nav.html %}
-            {{ content }}  
-            {% include footer.html %}
-        </div>
+        {% include temp-nav.html %}
+        {{ content }}  
+        {% include footer.html %}
     </body>
 </html>
