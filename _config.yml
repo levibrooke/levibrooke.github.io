@@ -2,9 +2,20 @@ name: Levi Porter
 description: I create unique experiences for the web.
 url: http://levibrooke.com
 
-markdown: kramdown
-highlighter: rouge
+# blog settings
 permalink: /articles/:title
+
+# collections
+collections:
+    work:
+        output: true
+        
+#defaults:
+#    - scope:
+#        path: ""
+#        type: work
+#    values:
+#        layout: home
 
 # plugins
 gems:
@@ -20,3 +31,10 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    
+# build settings
+markdown: kramdown
+highlighter: rouge
+#sass:
+#    sass_dir:
+#    style:
