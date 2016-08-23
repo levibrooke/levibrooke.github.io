@@ -1,40 +1,46 @@
-name: Levi Porter
-description: I create unique experiences for the web.
-url: http://levibrooke.com
+# levibrooke.com
 
-# blog settings
-permalink: /articles/:title
+# Site settings
+title: Levi Porter
+email: hello@levibrooke.com
+description: 
+#url: http://levibrooke.com
+url: http://localhost:4000
 
-# collections
+# Blog settings
+permalink: /writing/:title/
+
+# Collections
 collections:
     work:
         output: true
+        permalink: '/work/:path/'
         
-#defaults:
-#    - scope:
-#        path: ""
-#        type: work
-#    values:
-#        layout: home
+# Analytics
+google-analytics:
+gosquared:
 
-# plugins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom (RSS-like) feed of posts
-  - jemoji
-  - jekyll-redirect-from
+# Meta
+google-verification:
+meta-description: 
 
-# exclude
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+# Comments
+disqus:
+
+# Sass settings
+sass:  
+    sass_dir: _sass
+    style: :nested
     
-# build settings
+# Build settings
 markdown: kramdown
 highlighter: rouge
-#sass:
-#    sass_dir:
-#    style:
+
+# Exclude
+exclude:
+- CNAME
+- Gemfile
+- Gemfile.lock
+- .gitignore
+- README.md
+- .sass-cache

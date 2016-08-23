@@ -1,4 +1,5 @@
 ---
+# all.js
 ---
-{% include jquery.min.js %}
-{% include bootstrap.min.js %}
+{% include responsive-nav.js %}
+{% include scrobble.js %}

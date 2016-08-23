@@ -1,0 +1,43 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-smaller-than-tablet   : "max-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$home-color: #40514B;
+$about-color: #094074;
+$work-color: #59656F;
+$writing-color: #222;
+$archive-tags-color: #DB5461;
+
+$main-color: #094074;
+
+$primary-color: #222;
+$secondary-color: #222;
+$border-color: #222;
+$dark-grey: #222;
+$light-grey: #222;
+$link-color: #222;
+
+// Typography
+$primary-font: "Roboto Mono", "Courier New", Courier, monospace !default;
+$secondary-font: "Merriweather", Georgia, serif !default;
+
+//Grid Variables
+$container-width: 1080px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 2px !default;
+
+// Margin & Padding

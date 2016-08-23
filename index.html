@@ -1,21 +1,17 @@
 ---
-layout: home
-title: Levi Porter
+layout: default
+text-color: #F7FFFA
 ---
 
-<!--<h1 class="content-header">Hello,<br>My name is Levi Porter.</h1>-->
-
-<main class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <h1>Digital strategist and web designer currently based in Honolulu, Hawaii.</h1>
-            <h2>I spend my time learning new technologies and writing articles about marketing and the web.</h2>
-        </div>
-        <div class="col-sm-4 col-sm-offset-2">
-            <img src="{{ site.url }}/assets/levi.jpg" class="img-responsive">
-        </div>
-    </div>
-</main>
-
-    
-
+<h1>Digital strategist and front-end web designer and developer based in Honolulu, Hi.</h1>
+<section class="writing-block">
+    <h4>Latest Posts</h4>
+    <ul>
+        {% for post in site.posts limit:4 %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <time datetime="{{ post.date }}">{{ post.date | date: '%b %-d' }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

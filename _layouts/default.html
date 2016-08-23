@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html>
-    
-    {% include header.html %}
-    
-    <body class="default">
-        {% include gtm-container.html %}
-        {% include temp-nav.html %}
-        {{ content }}  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ site.title }} | {{ page.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+        
+        {% include meta.html %}
+
+        <link rel="stylesheet" href="{{ "/assets/all.css" | prepend: site.baseurl }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="{{ "/assets/all.js" | prepend: site.baseurl }}"></script>
+    </head>
+
+    {% if page.url == '/' %}
+        {% assign page_handle = 'home' %}
+    {% elsif page.url == '/about/' %}
+        {% assign page_handle = 'about' %}
+    {% elsif page.url == '/work/' %}
+        {% assign page_handle = 'work' %}
+    {% elsif page.url == '/contact/' %}
+        {% assign page_handle = 'contact' %}
+    {% elsif page.url == '/writing/' %}
+        {% assign page_handle = 'writing' %}
+    {% elsif page.url contains '/writing/tags/' %}
+        {% assign page_handle = 'tag' %}
+    {% elsif page.url contains '/writing/archive/' %}
+        {% assign page_handle = 'archive' %}
+    {% elsif page.url contains '/writing/' %}
+        {% assign page_handle = 'post' %}
+    {% elsif page.is_404 %}
+        {% assign page_handle = 'fourOhFour' %}
+    {% else %}
+        {% assign page_handle = 'page' %}
+    {% endif %}
+    <body class="{{ page_handle }}">
+
+        {% include header.html %}
+        
+        {% if page_handle == 'writing' %}
+            <article class="container">
+                {{ content }}
+            </article>
+        {% elsif page_handle == 'post' %}
+            <article class="container">
+                {{ content }}
+            </article>
+        {% else %}
+            <main class="container">
+                {{ content }}
+            </main>
+        {% endif %}
+
         {% include footer.html %}
+        
+        <script>
+            WebFontConfig = {
+              google: { families: ['Merriweather:900', 'Roboto Mono' ] }
+            };
+
+            (function(d) {
+              var wf = d.createElement('script'), s = d.scripts[0];
+              wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+              s.parentNode.insertBefore(wf, s);
+            })(document);
+        </script>
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                animate: true,
+                closeOnNavClick: true,
+                openPos: "relative",
+            });
+        </script>
+        
     </body>
+
 </html>

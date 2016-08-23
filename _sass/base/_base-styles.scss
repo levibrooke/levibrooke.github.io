@@ -1,0 +1,63 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// NOTE
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: $primary-font;
+}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+main a, article a {
+    color: inherit;
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 100%;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.home main a { background-image: linear-gradient(to bottom, transparent 50%, $home-color 50%); }
+.about main a { background-image: linear-gradient(to bottom, transparent 50%, $about-color 50%); }
+.work main a { background-image: linear-gradient(to bottom, transparent 50%, $work-color 50%); }
+.tag main a, .archive main a { background-image: linear-gradient(to bottom, transparent 50%, $archive-tags-color 50%); }
+.post-content a { background-image: linear-gradient(to bottom, transparent 50%, $writing-color 50%); }
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  border-width: 0;
+  border-top: 1px solid;
+  opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+}
