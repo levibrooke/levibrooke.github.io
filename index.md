@@ -1,6 +1,7 @@
 ---
-layout: default
+title: Home
 text-color: 
+layout: default
 ---
 
 <h1>Digital strategist and front-end web designer and developer based in Honolulu, Hi.</h1>
