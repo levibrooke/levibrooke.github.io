@@ -1,6 +1,6 @@
 ---
-layout: default
 title: loginjane.com
+layout: default
 tagline: Onepage site for fundraising.
 image_path: 
 order: 3

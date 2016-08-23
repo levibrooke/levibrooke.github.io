@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Wayfaring Amy
+layout: default
 tagline: A travel blog.
 image_path: 
 order: 1

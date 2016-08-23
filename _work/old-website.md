@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Old levibrooke.com
+layout: default
 tagline: My previous website.
 image_path: 
 order: 2

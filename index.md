@@ -1,6 +1,6 @@
 ---
 layout: default
-text-color: #F7FFFA
+text-color: 
 ---
 
 <h1>Digital strategist and front-end web designer and developer based in Honolulu, Hi.</h1>

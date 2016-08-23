@@ -1,45 +1,35 @@
-# levibrooke.com
-
-# Site settings
+---
 title: Levi Porter
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+    permalink: "/work/:path/"
 email: hello@levibrooke.com
 description: 
 url: http://levibrooke.com
-
-# Blog settings
-permalink: /writing/:title/
-
-# Collections
-collections:
-    work:
-        output: true
-        permalink: '/work/:path/'
-        
-# Analytics
-google-analytics:
-gosquared:
-
-# Meta
-google-verification:
+permalink: "/writing/:title/"
+google-analytics: 
+gosquared: 
+google-verification: 
 meta-description: 
-
-# Comments
-disqus:
-
-# Sass settings
-sass:  
-    sass_dir: _sass
-    style: :nested
-    
-# Build settings
+disqus: 
+sass:
+  sass_dir: _sass
+  style: nested
 markdown: kramdown
 highlighter: rouge
-
-# Exclude
 exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
-- .gitignore
+- ".gitignore"
 - README.md
-- .sass-cache
+- ".sass-cache"
