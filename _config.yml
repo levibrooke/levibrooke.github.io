@@ -23,7 +23,7 @@ meta-description:
 disqus: 
 sass:
   sass_dir: _sass
-  style: :nested
+  style: nested
 markdown: kramdown
 highlighter: rouge
 exclude:
