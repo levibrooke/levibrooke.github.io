@@ -23,6 +23,7 @@ After I started building the new website I stumbled upon [Siteleaf](http://sitel
 While it took some time playing around and getting things working, I’m pretty happy with the results. I don’t think my website is a finished product yet but it has been a fun experience learning some new tools.
 
 If you’re interested in building with Jekyll and Siteleaf here are some links to check out:
-- [Introduction to Jekyll and GitHub Pages](https://developmentseed.org/blog/2011/09/09/jekyll-github-pages/)
-- [Jekyll Documentation](jekyllrb.com)
-- [Siteleaf Documentation](http://learn.siteleaf.com/)
+
+* [Introduction to Jekyll and GitHub Pages](https://developmentseed.org/blog/2011/09/09/jekyll-github-pages/)
+* [Jekyll Documentation](jekyllrb.com)
+* [Siteleaf Documentation](http://learn.siteleaf.com/)
