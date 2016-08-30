@@ -10,8 +10,8 @@ layout: default
         </header>
         <div class="">
             <div class="row">
-                <aside class="post-meta two columns">
-                    <a class="post-date" href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }}</a>
+                <aside class="post-meta three columns">
+                    <a class="post-date" href="{{ post.url }}"><time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time></a>
                     <ul>
                         {% for tag in post.tags %}
                             <li><p>&#35; </p><a href="{{ page.url }}/tags/{{ tag }}">{{ tag }}</a></li>
