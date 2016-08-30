@@ -12,9 +12,10 @@ My previous website was completely static and lacked a blog - something I wanted
 
 I had three main goals for the project:
 
-I wanted something clean and simple that would focus on content.
-I didn’t want to use a bloated CMS like Wordpress.
-I wanted to learn something new in the process.
+1. I wanted something clean and simple that would focus on content.
+2. I didn’t want to use a bloated CMS like Wordpress.
+3. I wanted to learn something new in the process.
+
 Doing some reading online led me to Jekyll, a static site generator. Jekyll allows you to serve static files to build your website and it includes blog functionality with no database needed. Perhaps my favorite thing about building with Jekyll is templating with Liquid. As someone who never really enjoyed working in PHP to build Wordpress themes, this was a welcome change.
 
 After I started building the new website I stumbled upon Siteleaf, a CMS for static sites. Siteleaf is a great tool because of it’s simplicity and ease of use to manage your content. As a bonus, it has an awesome free plan that allows you to host your site through a public GitHub repository.
