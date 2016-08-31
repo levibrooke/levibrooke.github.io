@@ -4,7 +4,7 @@ date: 2016-08-26 17:34:00 -10:00
 tags:
 - jekyll
 layout: post
-has_comments:
+has_comments: 
 ---
 
 For a few months I had been thinking about redesigning my website. I had some ideas for the new site but also a lot of unanswered questions.
