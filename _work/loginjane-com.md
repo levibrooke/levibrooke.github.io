@@ -3,8 +3,8 @@ title: loginjane.com
 layout: work
 tagline: Onepage site for fundraising.
 skills:
-    - Design
-    - Development
+- Design
+- Development
 image: 
 order: 3
 ---
