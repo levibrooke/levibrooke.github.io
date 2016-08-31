@@ -12,6 +12,14 @@ collections:
     title: Work
     output: true
     permalink: "/work/:path/"
+defaults:
+    -
+        scope: 
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+            has_comments: true
 email: hello@levibrooke.com
 description: 
 url: http://levibrooke.com
