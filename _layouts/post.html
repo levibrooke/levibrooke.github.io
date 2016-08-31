@@ -7,7 +7,7 @@ layout: default
 </header>
 <section class="row">
     <aside class="post-meta three columns">
-        <a class="post-date" href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a>
+        <time datetime="{{ page.date }}" class="post-date"><a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a></time>
         <ul>
             {% for tag in page.tags %}
                 <li><p>&#35; </p><a href="{{ site.url }}/writing/tags/{{ tag }}">{{ tag }}</a></li>
@@ -28,4 +28,11 @@ layout: default
         {% endif %}
         <li><a href="{{ site.url }}/writing/archive/">View All Posts</a></li>
     </ul>
+</section>
+<section>
+    
+    {% if page.has_comments == true %}
+        {% include disqus.html %}
+    {% endif %}
+    
 </section>
