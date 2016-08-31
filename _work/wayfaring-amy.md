@@ -2,7 +2,10 @@
 title: Wayfaring Amy
 layout: work
 tagline: A travel blog.
-image_path: 
+skills:
+    - Design
+    - Development
+image: 
 order: 1
 ---
 
