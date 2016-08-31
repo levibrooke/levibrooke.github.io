@@ -10,6 +10,6 @@ order: 3
 ---
 
 <p>A quick onepage site for my sister to use for a fundraising effort. She was raising money to go on a mission trip to Recife, Brazil.</p>
-<figure class="image-wide">
+<figure>
     <img src="{{ site.url }}/assets/loginjane.png">
 </figure>
