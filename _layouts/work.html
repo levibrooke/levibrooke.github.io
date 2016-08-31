@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header>
+    <h1>{{ page.title }}</h1>
+</header>
+
+<section class="row">
+    <div class="post-content two-thirds column">
+        {{ content }}
+    </div>
+    <aside class="post-meta one-third column">
+        <ul>
+        {% for skill in page.skills %}
+            <li><p>&#35; {{ skill }}</p></li>
+        {% endfor %}
+        </ul>
+    </aside>
+</section>
+<section>
+    {% include work-pagination.html %}
+</section>
