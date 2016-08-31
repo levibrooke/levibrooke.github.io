@@ -3,7 +3,7 @@ title: Launching my Website with Siteleaf
 date: 2016-08-26 17:34:00 -10:00
 tags:
 - jekyll
-has_comments: true
+has_comments: false
 layout: post
 ---
 
