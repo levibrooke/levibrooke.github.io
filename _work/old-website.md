@@ -3,8 +3,8 @@ title: Old levibrooke.com
 layout: work
 tagline: My previous website.
 skills:
-    - Design
-    - Development
+- Design
+- Development
 image: 
 order: 2
 ---
