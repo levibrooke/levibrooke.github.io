@@ -22,19 +22,25 @@
     </div>
   </main>
   <script type="text/javascript">
-    let greeting = document.getElementById('time');
-    let now = new Date();
-    let hour = now.getHours();
 
-    if (hour < 12) {
-      greeting.innerText = 'morning';
+    function timeGreeting() {
+      let greeting = document.getElementById('time');
+      let now = new Date();
+      let hour = now.getHours();
+
+      if (hour < 12) {
+        greeting.innerText = 'morning';
+      }
+      else if (hour >= 12 && hour < 6) {
+        greeting.innerText = 'afternoon';
+      }
+      else {
+        greeting.innerText = 'evening';
+      }
     }
-    else if (hour >= 12 < 6) {
-      greeting.innerText = 'afternoon';
-    }
-    else {
-      greeting.innerText = 'evening';
-    }
+
+    window.onload(timeGreeting());
+
   </script>
 </body>
 </html>
