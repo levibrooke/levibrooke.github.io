@@ -20,7 +20,7 @@
   <main>
     <div class="container">
       <header>
-        <h1>Good <span id="time"></span>, esteemed website visitor!</h1>
+        <h1>Hello esteemed website visitor!</h1>
       </header>
       <section>
         <p>Thank you for visiting. Unfortunately, the website is not quite ready for primetime. What will the digital home of Levi Porter contain, you ask? Well, it will show off some projects that I've worked on, share blog posts that I've written, and it might even have an about page.</p>
@@ -30,29 +30,5 @@
       </footer>
     </div>
   </main>
-  <script type="text/javascript">
-
-
-    function timeGreeting() {
-      let greeting = document.getElementById('time');
-      let now = new Date();
-      let hour = now.getHours();
-
-      if (hour < 12) {
-        greeting.innerText = 'morning';
-      }
-      else if (hour >= 12 && hour < 6) {
-        greeting.innerText = 'afternoon';
-      }
-      else {
-        greeting.innerText = 'evening';
-      }
-    }
-
-    window.addEventListener('load', function() {
-      timeGreeting();
-    });
-
-  </script>
 </body>
 </html>
