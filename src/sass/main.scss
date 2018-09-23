@@ -14,6 +14,30 @@ body {
 img {
   max-width: 100%;
 }
+
+// typography
+h1 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "roboto-slab";
+  font-weight: normal;
+  color: #ffffff;
+}
+a {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
 .wrapper {
   margin: 50px;
   background-color: #371722;
@@ -24,7 +48,6 @@ img {
 
   #home-img {
     position: absolute;
-    // margin-left: 60%;
     top: -25px;
     right: 280px;
     width: 400px;
@@ -48,6 +71,6 @@ footer {
   position: relative;
 
   a {
-    margin: 20px;
+    margin: 25px;
   }
 }
