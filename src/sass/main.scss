@@ -22,7 +22,7 @@ h1 {
   font-size: 36px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin-bottom: 20px;
 }
 h2 {
@@ -56,13 +56,14 @@ a {
   }
 }
 .intro {
-  width: 300px;
+  width: 420px;
   height: 200px;
   z-index: 2;
   position: relative;
   display: block;
   align-self: center;
   margin: 200px 0;
+  text-align: center;
 }
 footer {
   display: flex;
