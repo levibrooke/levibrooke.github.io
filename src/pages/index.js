@@ -11,21 +11,21 @@ export default class Index extends React.Component {
 
     this.state = {
       theme: 'home',
-      wrapperColor: '#371722'
+      wrapperColor: '#a6cfe2'
     }
   }
 
   defaultHandler = () => {
     this.setState({
       theme: 'home',
-      wrapperColor: '#371722'
+      wrapperColor: '#a6cfe2'
     });
   }
 
   aboutHandler = () => {
     this.setState({
       theme: 'about',
-      wrapperColor: '#efe8d8'
+      wrapperColor: '#2F3130'
     })
   }
 
@@ -49,18 +49,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <div id="wrapper">
-          <section className="intro">
-            <h1>Levi Porter</h1>
-            <h2>Fullstack developer based in Seattle.</h2>
-          </section>
-          <section id="home-img" className="home">
-            <img src={levi} />
-            {/* <Img 
-            alt="Levi Porter on a mountain."
-            fluid={props.data.imageOne.childImageSharp.fluid}
-          /> */}
-          </section>
-          <footer>
+          <header>
             <Link
               to="/about"
               onMouseOver={this.aboutHandler}
@@ -68,14 +57,41 @@ export default class Index extends React.Component {
             >
               About
             </Link>
-            <a id="say-hello">Say Hello</a>
-            <Link 
+            <Link
               to="/work"
               onMouseOver={this.workHandler}
               onMouseLeave={this.defaultHandler}
             >
               Work
             </Link>
+          </header>
+          <section id="home-img" className="home">
+            <img src={levi} />
+            {/* <Img 
+            alt="Levi Porter on a mountain."
+            fluid={props.data.imageOne.childImageSharp.fluid}
+          /> */}
+          </section>
+          <section className="intro">
+            <h1>I'm Levi Porter, a fullstack developer based in Seattle.</h1>
+            {/* <h2>I'm a Seattle-based fullstack developer, currently seeking </h2> */}
+          </section>
+          <footer>
+            {/* <Link
+              to="/about"
+              onMouseOver={this.aboutHandler}
+              onMouseLeave={this.defaultHandler}
+            >
+              About
+            </Link> */}
+            <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a>
+            {/* <Link 
+              to="/work"
+              onMouseOver={this.workHandler}
+              onMouseLeave={this.defaultHandler}
+            >
+              Work
+            </Link> */}
           </footer>
         </div>
       </Layout>
