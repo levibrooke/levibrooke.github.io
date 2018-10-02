@@ -51,7 +51,7 @@ export default class Index extends React.Component {
         <div id="wrapper">
           <header>
             <Link
-              to="/about"
+              to="/"
               onMouseOver={this.aboutHandler}
               onMouseLeave={this.defaultHandler}
             >
@@ -64,6 +64,7 @@ export default class Index extends React.Component {
             >
               Work
             </Link>
+            <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a>
           </header>
           <section id="home-img" className="home">
             <img src={levi} />
@@ -73,8 +74,11 @@ export default class Index extends React.Component {
           /> */}
           </section>
           <section className="intro">
-            <h1>I'm Levi Porter, a fullstack developer based in Seattle.</h1>
-            {/* <h2>I'm a Seattle-based fullstack developer, currently seeking </h2> */}
+            <h2>Levi Porter</h2>
+            <h1>Fullstack Developer.</h1>
+            <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p>
+            <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
+            <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p>
           </section>
           <footer>
             {/* <Link
@@ -84,7 +88,7 @@ export default class Index extends React.Component {
             >
               About
             </Link> */}
-            <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a>
+            {/* <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a> */}
             {/* <Link 
               to="/work"
               onMouseOver={this.workHandler}
