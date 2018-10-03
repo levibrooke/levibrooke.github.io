@@ -36,10 +36,8 @@ export default class Index extends React.Component {
               <h1>Levi<span className="break-text">Porter.</span></h1>
               {/* <hr className="divider" /> */}
               <h2>Fullstack Developer</h2>
-              {/* <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p> */}
-              {/* <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
-              <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p> */}
             </div>
+            <a href="mailto:levi@levibrooke.com" target="_blank" id="intro-cta">Say Hello</a>
           </section>
         </div>
         <div id="next-wrapper">
