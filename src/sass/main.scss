@@ -120,20 +120,14 @@
     line-height: 1.8em;
     text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
   }
-
-  a {
-    color: #ffffff;
-    border-bottom: 1px dotted #ffffff;
-  }
 }
 header {
   display: flex;
   flex-flow: row nowrap;
-  // justify-content: space-between;
+  justify-content: flex-end;
   position: absolute;
   top: -63px;
-  width: calc(100vw - 50px);
-  margin-left: 20%;
+  width: 40%;
 
   a {
     margin: 20px 25px;
@@ -169,6 +163,11 @@ header {
 }
 .bio-container {
   width: 600px;
+
+  a {
+    color: #000;
+    border-bottom: 1px dotted #000;
+  }
 
   .tools {
     display: flex;

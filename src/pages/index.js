@@ -12,61 +12,16 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      theme: 'home',
-      wrapperColor: '#a6cfe2'
-    }
+    this.state = {}
   }
-
-  // defaultHandler = () => {
-  //   this.setState({
-  //     theme: 'home',
-  //     wrapperColor: '#a6cfe2'
-  //   });
-  // }
-
-  // aboutHandler = () => {
-  //   this.setState({
-  //     theme: 'about',
-  //     wrapperColor: '#2F3130'
-  //   })
-  // }
-
-  // workHandler = () => {
-  //   this.setState({
-  //     theme: 'work',
-  //     wrapperColor: '#97b8ae'
-  //   })
-  // }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   const imgContainer = document.getElementById('home-img');
-  //   const wrapper = document.getElementById('wrapper');
-  //   if (this.state.theme !== prevState.theme) {
-  //     imgContainer.className = this.state.theme;
-  //     wrapper.style.background = this.state.wrapperColor;
-  //   }
-  // }
 
   render() {
     return (
       <Layout>
         <div id="hero-wrapper">
           <header>
-            <Link
-              to="/"
-              onMouseOver={this.aboutHandler}
-              onMouseLeave={this.defaultHandler}
-            >
-              About
-            </Link>
-            <Link
-              to="/work"
-              onMouseOver={this.workHandler}
-              onMouseLeave={this.defaultHandler}
-            >
-              Work
-            </Link>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
             {/* <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a> */}
           </header>
           <section id="home-img" className="home">
@@ -88,7 +43,7 @@ export default class Index extends React.Component {
           </section>
         </div>
         <div id="next-wrapper">
-          <section className="bio-intro">
+          <section className="bio-intro" id="about">
             <h1>About.</h1>
           </section>
           <section className="bio-content">
@@ -113,7 +68,7 @@ export default class Index extends React.Component {
               </div>
             </div>
           </section>
-          <section className="projects-intro">
+          <section className="projects-intro" id="work">
             <h1>Work.</h1>
           </section>
           <section className="projects-content">
