@@ -4,6 +4,24 @@
 @import 'typography';
 @import 'variables';
 
+.button-solid {
+  border: none;
+  padding: 10px 60px;
+  font-size: 18px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.button-outline-smaller {
+  border: 2px solid #000000;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 #hero-wrapper {
   margin: 75px 25px 25px;
@@ -75,18 +93,16 @@
   }
 
   #intro-cta {
-    background: #ffffff;
-    border: none;
-    padding: 10px 60px;
-    font-size: 18px;
-    color: #000000;
-    font-family: "brandon-grotesque", sans-serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     position: relative;
     right: -230px;
     bottom: -18px;
+    color: #000000;
+    background: #ffffff;
+
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
   }
 }
 header {
@@ -101,8 +117,10 @@ header {
     margin: 20px 25px;
     font-weight: 600;
     color: #000000;
-    text-transform: uppercase;
+    font-family: "fira-mono", monospace;
+    text-transform: lowercase;
     letter-spacing: 4px;
+    font-size: 20px;
   }
 }
 
@@ -110,7 +128,7 @@ header {
   margin: 0 25px;
   background-color: #ffffff;
 }
-.bio-intro {
+.bio-intro, .projects-intro, .contact-intro {
   height: 100vh;
   display: flex;
   flex-flow: row nowrap;
@@ -130,7 +148,14 @@ header {
   align-content: center;
 }
 .bio-container {
-  width: 600px;
+  width: 800px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  .bio-container__copy {
+    width: 450px;
+  }
 
   a {
     color: #000;
@@ -160,21 +185,49 @@ header {
     top: 18px;
     width: 15px;
   }
-}
-.projects-intro {
-  // background-color: #ffffff;
-  height: 100vh;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 
-  h1 {
-    font-size: 200px;
-    color: #000000;
-    text-transform: lowercase;
+  .bio-image {
+    width: 300px;
+    height: 212px;
+    position: relative;
+  }
+  .bio-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $light-blue;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bio-image::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $maroon;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
+// .projects-intro {
+//   // background-color: #ffffff;
+//   height: 100vh;
+//   display: flex;
+//   flex-flow: row nowrap;
+//   justify-content: center;
+//   align-items: center;
+
+//   h1 {
+//     font-size: 200px;
+//     color: #000000;
+//     text-transform: lowercase;
+//   }
+// }
 .projects-content {
   // margin: 500px auto;
   display: flex;
@@ -184,11 +237,12 @@ header {
 }
 .project-item {
   // background-color: #97bdce;
-  width: 700px;
+  width: 800px;
   height: 300px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: space-between;
   margin: 50px 0;
 
   h3, h4, p {
@@ -204,21 +258,72 @@ header {
     position: relative;
   }
   #telescope__img {
-    height: 220px;
-    // left: 100px;
+    height: 240px;
   }
   #recipeasy__img {
-    height: 250px;
-    // right: 100px;
+    height: 300px;
   }
   #smartaina__img {
     height: 220px;
-    // left: 100px;
   }
 }
 .project-item__container {
-  width: 250px;
-  margin: 40px;
+  width: 320px;
+}
+.project-item__buttonrow {
+  margin: 40px 0;
+}
+.button-work {
+  background: none;
+  color: #000000;
+  margin-right: 40px;
+
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}
+.work-link {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.project-item__image {
+  width: 200px;
+  height: 220px;
+  position: relative;
+}
+.project-item__image::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $light-blue;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project-item__image::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $maroon;
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact-container {
+  width: 600px;
 }
 footer {
   display: flex;
