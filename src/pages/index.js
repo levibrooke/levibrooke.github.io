@@ -23,7 +23,7 @@ export default class Index extends React.Component {
           <header>
             <a href="#about">About</a>
             <a href="#work">Work</a>
-            {/* <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a> */}
+            <a href="#contact">Contact</a>
           </header>
           <section id="home-img" className="home">
             <img src={levi} />
@@ -105,7 +105,7 @@ export default class Index extends React.Component {
               <div className="project-item__container">
                 <h4>03</h4>
                 <h3>Smart Aina</h3>
-                <p>An IoT project that detects and deters intruders on small-yield farms, and sends alerts that can be monitored via a user dashboard.</p>
+                <p>An IoT project that detects and deters theft on small-yield farms, and sends alerts that can be monitored via a user dashboard.</p>
                 <p className="project-item__tools">NodeJS, React, Particle Photon Microcontroller</p>
               </div>
               <div className="project-item__image">
