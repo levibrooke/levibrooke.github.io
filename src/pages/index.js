@@ -110,6 +110,7 @@ export default class Index extends React.Component {
               </div>
               <div className="project-item__image">
                 <img id="smartaina__img" src={smartaina} alt="Smart Aina. An IoT project that detects and deters intruders on small-yield farms, and sends alerts that can be monitored via a user dashboard."/>
+                <div id="smartaina__img-frame" />
               </div>
             </div>
           </section>
