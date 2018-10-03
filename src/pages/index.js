@@ -38,7 +38,7 @@ export default class Index extends React.Component {
               {/* <hr className="divider" /> */}
               <h2>Fullstack Developer</h2>
             </div>
-            <a href="mailto:levi@levibrooke.com" target="_blank" id="intro-cta" className="button-solid">Say Hello</a>
+            <a href="mailto:levi@levibrooke.com" id="intro-cta" className="button-solid">Say Hello</a>
           </section>
         </div>
         <div id="next-wrapper">
@@ -49,7 +49,7 @@ export default class Index extends React.Component {
             <div className="bio-container">
               <div className="bio-container__copy">
                 <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p>
-                <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
+                <p>I am a graduate of <a href="https://devleague.com">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
                 <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p>
                 <p>Technologies that I have experience with:</p>
                 <div className="tools">
@@ -84,7 +84,7 @@ export default class Index extends React.Component {
                 <p className="project-item__tools">NodeJS, Express, NextJS, Redux</p>
                 <div className="project-item__buttonrow">
                   <a href="https://telescope.circavictor.com" className="button-outline-smaller button-work">Visit site</a>
-                  <a href="https://medium.com/circa-victor/telescope-a-stock-ticker-for-the-political-economy-26e884f795ef" target="_blank" className="work-link">Read Blog Post</a>
+                  <a href="https://medium.com/circa-victor/telescope-a-stock-ticker-for-the-political-economy-26e884f795ef" className="work-link">Read Blog Post</a>
                 </div>
               </div>
               <img id="telescope__img" src={telescope} alt="Telescope. A stock ticker for the political economy."/>
@@ -118,7 +118,7 @@ export default class Index extends React.Component {
           </section>
           <section className="contact-content">
             <div className="contact-container">
-              <p>Feel free to reach out if you'd like to connect or discuss any project or employment opportunities. Or if you're in Seattle, come say hi at the weekly <a href="http://seattlejshackers.com/" target="_blank">Seattle JS Hackers</a> meetup!</p>
+              <p>Feel free to reach out if you'd like to connect or discuss any project or employment opportunities. Or if you're in Seattle, come say hi at the weekly <a href="http://seattlejshackers.com/">Seattle JS Hackers</a> meetup!</p>
               <a href="mailto:levi@levibrooke.com" className="button-outline-smaller button-work">Say Hello</a>
             </div>
           </section>

@@ -328,6 +328,11 @@ header {
   align-items: center;
   width: 600px;
 
+  p > a {
+    color: #000000;
+    border-bottom: 1px dotted #000000;
+  }
+
   .button-outline-smaller {
     margin: 40px;
   }
