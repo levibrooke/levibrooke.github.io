@@ -6,7 +6,6 @@ h1 {
   color: #ffffff;
   letter-spacing: 4px;
   margin-bottom: 20px;
-  line-height: 44px;
 }
 h2 {
   font-family: "brandon-grotesque";
@@ -17,12 +16,26 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 1em;
 }
+h3 {
+  font-family: "fira-mono", monospace;
+  font-weight: 600;
+}
+h4 {
+  font-family: "fira-mono", monospace;
+  font-weight: 400;
+}
 a {
   font-family: "brandon-grotesque", sans-serif;
   text-decoration: none;
 }
 p {
   font-family: "brandon-grotesque", sans-serif;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 1em;
+  font-size: 18px;
+}
+ul, li {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #000000;
+  font-size: 16px;
 }

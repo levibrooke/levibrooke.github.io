@@ -5,10 +5,12 @@
 @import 'variables';
 
 
-#wrapper {
+#hero-wrapper {
   margin: 75px 25px 25px;
-  background-color: $light-blue;
+  // background-color: $light-blue;
+  background-color: $gray;
   height: calc(100vh - 100px);
+  // height: 100%;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -44,63 +46,73 @@
     top: 0;
     left: 0;
   }
-  .about::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: $tan !important;
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .about::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: $gray !important;
-    mix-blend-mode: screen;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .work::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: $dark-blue !important;
-    mix-blend-mode: screen;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .work::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: $green !important;
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  // .about::after {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $tan !important;
+  //   mix-blend-mode: multiply;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+  // .about::before {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $gray !important;
+  //   mix-blend-mode: screen;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+  // .work::after {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $dark-blue !important;
+  //   mix-blend-mode: screen;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+  // .work::before {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $green !important;
+  //   mix-blend-mode: multiply;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
 }
 .intro {
+  background-color: $light-blue;
   width: 450px;
   height: 300px;
   z-index: 2;
   position: relative;
   align-self: flex-start;
   text-align: left;
-  margin-top: -500px;
+  margin-top: -450px;
   margin-left: 300px;
+
+  .intro-container {
+    margin: 106px 40px 40px 50%;
+  }
 
   h1 {
     text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 13px;
   }
 
   p {
@@ -130,6 +142,116 @@ header {
     text-transform: uppercase;
     letter-spacing: 4px;
   }
+}
+
+#next-wrapper {
+  margin: 0 25px;
+  background-color: #ffffff;
+}
+.bio-intro {
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 200px;
+    color: #000000;
+    text-transform: lowercase;
+  }
+}
+.bio-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.bio-container {
+  width: 600px;
+
+  .tools {
+    display: flex;
+    flex-flow: row nowrap;
+
+    ul {
+      width: 50%;
+    }
+  }
+
+  li {
+    margin: 1em;
+  }
+  li::before {
+    content: '';
+    position: relative;
+    display: block;
+    border-bottom: 2px solid;
+    border-bottom-color: $light-blue;
+    padding-bottom: 2px;
+    left: -15px;
+    top: 18px;
+    width: 10px;
+  }
+}
+.projects-intro {
+  // background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 200px;
+    color: #000000;
+    text-transform: lowercase;
+  }
+}
+.projects-content {
+  // margin: 500px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-item {
+  // background-color: #97bdce;
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 50px 0;
+
+  h3, h4, p {
+    color: #000000;
+  }
+
+  .project-item__tools {
+    color: #666666;
+    font-size: 16px;
+  }
+
+  img {
+    position: relative;
+  }
+  #telescope__img {
+    height: 220px;
+    // left: 100px;
+  }
+  #recipeasy__img {
+    height: 250px;
+    // right: 100px;
+  }
+  #smartaina__img {
+    height: 220px;
+    // left: 100px;
+  }
+}
+.project-item__container {
+  width: 250px;
+  margin: 40px;
 }
 footer {
   display: flex;

@@ -4,6 +4,9 @@ import Img from 'gatsby-image';
 
 import Layout from '../layouts';
 import levi from '../img/levi-grayscale.jpg';
+import telescope from '../img/telescope.png';
+import recipeasy from '../img/recip-easy2.png';
+import smartaina from '../img/smart-aina.jpg';
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -15,40 +18,40 @@ export default class Index extends React.Component {
     }
   }
 
-  defaultHandler = () => {
-    this.setState({
-      theme: 'home',
-      wrapperColor: '#a6cfe2'
-    });
-  }
+  // defaultHandler = () => {
+  //   this.setState({
+  //     theme: 'home',
+  //     wrapperColor: '#a6cfe2'
+  //   });
+  // }
 
-  aboutHandler = () => {
-    this.setState({
-      theme: 'about',
-      wrapperColor: '#2F3130'
-    })
-  }
+  // aboutHandler = () => {
+  //   this.setState({
+  //     theme: 'about',
+  //     wrapperColor: '#2F3130'
+  //   })
+  // }
 
-  workHandler = () => {
-    this.setState({
-      theme: 'work',
-      wrapperColor: '#97b8ae'
-    })
-  }
+  // workHandler = () => {
+  //   this.setState({
+  //     theme: 'work',
+  //     wrapperColor: '#97b8ae'
+  //   })
+  // }
 
-  componentDidUpdate(prevProps, prevState) {
-    const imgContainer = document.getElementById('home-img');
-    const wrapper = document.getElementById('wrapper');
-    if (this.state.theme !== prevState.theme) {
-      imgContainer.className = this.state.theme;
-      wrapper.style.background = this.state.wrapperColor;
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   const imgContainer = document.getElementById('home-img');
+  //   const wrapper = document.getElementById('wrapper');
+  //   if (this.state.theme !== prevState.theme) {
+  //     imgContainer.className = this.state.theme;
+  //     wrapper.style.background = this.state.wrapperColor;
+  //   }
+  // }
 
   render() {
     return (
       <Layout>
-        <div id="wrapper">
+        <div id="hero-wrapper">
           <header>
             <Link
               to="/"
@@ -64,7 +67,7 @@ export default class Index extends React.Component {
             >
               Work
             </Link>
-            <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a>
+            {/* <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a> */}
           </header>
           <section id="home-img" className="home">
             <img src={levi} />
@@ -74,28 +77,75 @@ export default class Index extends React.Component {
           /> */}
           </section>
           <section className="intro">
-            <h2>Levi Porter</h2>
-            <h1>Fullstack Developer.</h1>
-            <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p>
-            <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
-            <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p>
+            <div className="intro-container">
+              <h1>Levi<span className="break-text">Porter.</span></h1>
+              {/* <hr className="divider" /> */}
+              <h2>Fullstack Developer</h2>
+              {/* <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p> */}
+              {/* <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
+              <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p> */}
+            </div>
+          </section>
+        </div>
+        <div id="next-wrapper">
+          <section className="bio-intro">
+            <h1>About.</h1>
+          </section>
+          <section className="bio-content">
+            <div className="bio-container">
+              <p>I'm a developer with a passion for collaborating with talented people to build unique user experiences.</p>
+              <p>I am a graduate of <a href="https://devleague.com" target="_blank">DevLeague</a>, a learning bootcamp based in Honolulu, Hawaii. Prior to becoming a developer, I served in the Coast Guard and worked in digital marketing.</p>
+              <p>When I'm not working, you can find me on a soccer field, hiking in Washington's great outdoors, or exploring Seattle.</p>
+              <p>Technologies that I have experience with:</p>
+              <div className="tools">
+                <ul>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>CSS & SASS</li>
+                </ul>
+                <ul>
+                  <li>NodeJS</li>
+                  <li>PostgreSQL</li>
+                  <li>Gatsby</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section className="projects-intro">
+            <h1>Work.</h1>
+          </section>
+          <section className="projects-content">
+            <div className="project-item">
+              <div className="project-item__container">
+                <h4>01</h4>
+                <h3>Telescope</h3>
+                <p>A stock ticker for the political economy.</p>
+                <p className="project-item__tools">NodeJS, Express, NextJS, Redux</p>
+              </div>
+              <img id="telescope__img" src={telescope} alt="Telescope. A stock ticker for the political economy."/>
+            </div>
+            <div className="project-item">
+              <img id="recipeasy__img" src={recipeasy} alt="Recip-Easy. A web application that tracks grocery items and generates recipe ideas."/>
+              <div className="project-item__container">
+                <h4>02</h4>
+                <h3>Recip-Easy</h3>
+                <p>A web application that tracks grocery items and generates recipe ideas.</p>
+                <p className="project-item__tools">NodeJS, React, Redux, Watson Visual Recognition, Barcode Scanning</p>
+              </div>
+            </div>
+            <div className="project-item">
+              <div className="project-item__container">
+                <h4>03</h4>
+                <h3>Smart Aina</h3>
+                <p>An IoT project that detects and deters intruders on small-yield farms, and sends alerts that can be monitored via a user dashboard.</p>
+                <p className="project-item__tools">NodeJS, React, Particle Photon Microcontroller</p>
+              </div>
+              <img id="smartaina__img" src={smartaina} alt="Smart Aina. An IoT project that detects and deters intruders on small-yield farms, and sends alerts that can be monitored via a user dashboard."/>
+            </div>
           </section>
           <footer>
-            {/* <Link
-              to="/about"
-              onMouseOver={this.aboutHandler}
-              onMouseLeave={this.defaultHandler}
-            >
-              About
-            </Link> */}
-            {/* <a id="say-hello" href="mailto:levi@levibrooke.com">Say Hello</a> */}
-            {/* <Link 
-              to="/work"
-              onMouseOver={this.workHandler}
-              onMouseLeave={this.defaultHandler}
-            >
-              Work
-            </Link> */}
           </footer>
         </div>
       </Layout>
